@@ -17,7 +17,7 @@ return new class extends Migration
             $table->foreignId('renter_id');
             $table->date('tanggal_mulai');
             $table->date('tanggal_akhir');
-            $table->int('total_harga_sewa');
+            $table->integer('total_harga_sewa');
             $table->enum('status',['aktif','selesai','batal']);
             $table->timestamps();
         });
